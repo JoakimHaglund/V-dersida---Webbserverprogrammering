@@ -1,0 +1,178 @@
+/*
+======================================================================
+Globala regler
+======================================================================
+*/
+
+html {
+	background-color:#fff;
+	font-size: 62.5%;  									/*Bra storlek för att använda REM då 62.5% av 16px är 10*/
+	height: 100%;
+}
+
+body {
+	background-color: #dad8d6;
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+*{
+	color: #000;
+	font-size: 1.6rem;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/*
+======================================================================
+Regler för sektioner
+======================================================================
+*/
+
+header, footer{
+	background-color:#cec6b9;
+}
+
+header {
+	padding: 10px 0px 10px 0px;
+	width: 100%
+}
+
+footer {
+	flex-shrink: 0;
+	padding: 20px 0px 20px 30px;	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+section {
+	background-color: #fff;
+	flex: 1 0 auto;
+	margin: auto;
+	padding: 10px 20px 10px 20px;
+	max-width: 50%;	
+}
+div.left {
+
+	flex-basis: 25%;
+}
+div.right {
+	margin-right: 15px;
+
+}
+
+div.content {
+	background-color: #eff0f1;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 5px;
+}
+/*Stilning av inforutan i uppgift 1*/
+aside.infobox {
+	background-color: #dae3ec;
+	margin: 5px 15% 5px 5%;
+	padding: 10px;
+	border-radius: 0px 5px 5px 0px;
+	border-style: solid;
+	border-color: silver;
+	border-width: thin;
+	border-left-width: thick;
+}
+
+header nav {
+	padding-left: 25%;
+	padding-bottom: 5px;
+}
+
+/*
+======================================================================
+Regler för headers
+======================================================================
+*/
+
+header h1, h3 {
+	font-size: 5rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.8rem;
+}
+
+/*
+======================================================================
+Regler för text
+======================================================================
+*/
+
+small, small * {
+	font-size: 1.5rem;
+}
+
+rp, rt, bdi {
+	font-size: 1rem;
+}
+
+sup, sub {
+	font-size: 1.2rem;
+}
+
+/*
+======================================================================
+Regler för länkar
+======================================================================
+*/
+
+a:link,
+a:visited {
+	text-decoration: none;
+	color: blue;
+}
+
+a:focus,
+a:hover {
+	text-decoration: underline;
+}
+
+nav a:link,
+nav a:visited {
+	background-color: #000;
+	color: #fff;
+	padding: 10px;
+}
+/*
+======================================================================
+Regler för tabellen
+======================================================================
+*/
+#forecast {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#forecast td, #forecast th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#forecast tr:nth-child(even){background-color: #f2f2f2;}
+
+#forecast tr:hover {background-color: #ddd;}
+
+#forecast th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+#location th {
+	width: 100%;
+}
